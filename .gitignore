@@ -57,6 +57,9 @@ dist/
 build/
 *.egg-info/
 
+# Environment variables
+.env
+
 # Personal notes and scratch files
 scratch/
 notes/
