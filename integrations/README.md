@@ -14,6 +14,7 @@ supported agentic coding tools.
 - **[Cursor](#cursor)** — `.mdc` rule files in `cursor/`
 - **[Aider](#aider)** — `CONVENTIONS.md` in `aider/`
 - **[Windsurf](#windsurf)** — `.windsurfrules` in `windsurf/`
+- **[Claude Code Channels](#claude-code-channels)** — Telegram & Discord notifications
 
 ## Quick Install
 
@@ -172,3 +173,21 @@ cd /your/project && /path/to/agency-agents/scripts/install.sh --tool windsurf
 ```
 
 See [windsurf/README.md](windsurf/README.md) for details.
+
+---
+
+## Claude Code Channels
+
+Control your Agency agents from **Telegram** and **Discord** using Claude Code
+Channels. Send messages from your phone and Claude replies through the same
+chat while running against your local files.
+
+```bash
+# Interactive setup
+./integrations/claude-code-channels/setup.sh
+
+# Or start with channels directly
+claude --channels plugin:telegram@claude-plugins-official plugin:discord@claude-plugins-official
+```
+
+See [claude-code-channels/README.md](claude-code-channels/README.md) for details.
